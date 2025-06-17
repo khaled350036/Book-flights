@@ -1,0 +1,333 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="container_nav">
+      <div class="logo">
+        <img alt="Company logo" src="https://storage.googleapis.com/a1aa/image/PmvImaMPdl6PLhMsbf9Mu8e9ay33UzIej9VQn6ufckryszVPB.jpg"/>
+        <span>Tourism Co.</span>
+      </div>
+      <nav id="nav_links">
+        <a href="#Home-Page">Home</a>
+        <a href="#Destination">Destinations</a>
+        <a href="#Services-Section">Services</a>
+        <a href="#Offers-Section">Offers</a>
+        <a href="#footers">Contact Us</a>
+      </nav>
+      <div class="language-buttons">
+        <button><a href="Login.html">login</a></button>
+        <div id="menu">
+          <a onclick="toggleMenu()">
+            <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000">
+              <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <!-- القائمة المنسدلة عند الشاشات الصغيرة -->
+      <nav id="nav_links_out" style="display: none;">
+        <a href="#Home-Page">Home</a>
+        <a href="#Destination">Destinations</a>
+        <a href="#Services-Section">Services</a>
+        <a href="#Offers-Section">Offers</a>
+        <a href="#footers">Contact Us</a>
+      </nav>
+    </div>
+  </header>
+
+    <!-- Home Page -->
+    <section class="Home_Page" id="Home-Page">
+        <div class="overlay"></div> 
+        <div class="content">
+            <h1>Discover Your Next Adventure</h1>
+            <div>
+                <a href="places.html" class="button">Book Now</a>
+            </div>
+        </div>
+    </section>
+    
+  <!-- Highlight Sections -->
+  <section class="container" >
+    <h2 class="text-3xl font-bold text-center mb-8 marg">
+      Popular Destinations
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 display gap-8 " >
+      <div class="bg-white shadow-md rounded-lg overflow-hidden text-center hov_Zoom_in">
+        <img alt="Beautiful beach in Maldives" class="w-full object-cover " src="https://storage.googleapis.com/a1aa/image/EUC85lH9UuoAMNawctMTTYExsYVNIIlVrxbivpwAhh0xOX9E.jpg"/>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Maldives</h3>
+          <p class="mt-2 text-gray-600">
+            Experience the serene beauty of the Maldives with crystal clear waters and white sandy beaches.
+          </p>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden text-center hov_Zoom_in">
+        <img alt="Eiffel Tower in Paris" class="w-full object-cover" src="https://storage.googleapis.com/a1aa/image/TWuxUM00aYJyKB6DT6kQeNlEAtlCC1JSibyusLFOWOhidu6JA.jpg"/>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">Paris</h3>
+          <p class="mt-2 text-gray-600">
+            Explore the romantic city of Paris, known for its iconic Eiffel Tower and rich cultural heritage.
+          </p>
+        </div>
+      </div>
+      <div class="bg-white shadow-md rounded-lg overflow-hidden text-center hov_Zoom_in">
+        <img alt="Great Wall of China" class="w-full object-cover" src="https://storage.googleapis.com/a1aa/image/nle15aX2vy1iWiJi5hDdFsGVMiPHxHLizQLyvZiZWpZldu6JA.jpg"/>
+        <div class="p-4">
+          <h3 class="text-xl font-bold">China</h3>
+          <p class="mt-2 text-gray-600">
+            Discover the ancient wonders of China, including the Great Wall and the Forbidden City.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Offers Section -->
+  <section class="bg-gray-200 py-12 display container " id="Offers-Section">
+    <div >
+      <h2 class="text-3xl font-bold text-center mb-8 marg">
+        Current Offers
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">5-Day Trip to Paris</h3>
+            <p class="mt-2 text-gray-600">
+              Enjoy a 5-day trip to Paris with exclusive discounts and benefits.
+            </p>
+            <p class="mt-2 text-blue-500 font-bold">$999</p>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              More Details
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">7-Day Trip to Maldives</h3>
+            <p class="mt-2 text-gray-600">
+              Experience the beauty of the Maldives with a 7-day all-inclusive package.
+            </p>
+            <p class="mt-2 text-blue-500 font-bold">$1499</p>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              More Details
+            </button>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-4">
+            <h3 class="text-xl font-bold">10-Day Trip to China</h3>
+            <p class="mt-2 text-gray-600">
+              Explore the wonders of China with a 10-day guided tour.
+            </p>
+            <p class="mt-2 text-blue-500 font-bold">$1999</p>
+            <button class="mt-4 bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+              More Details
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="container" id="Services-Section">
+    <h2 class="text-3xl font-bold text-center mb-8 marg">
+      Our Services
+    </h2>
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+      <div class="text-center">
+        <i class="fas fa-plane-departure text-4xl text-blue-500"></i>
+        <h3 class="mt-4 text-xl font-bold">Organizing Trips</h3>
+        <p class="mt-2 text-gray-600">We organize trips to various destinations around the world.</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-hotel text-4xl text-blue-500"></i>
+        <h3 class="mt-4 text-xl font-bold">Hotel Reservations</h3>
+        <p class="mt-2 text-gray-600">We provide hotel reservation services to ensure your stay is comfortable.</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-car text-4xl text-blue-500"></i>
+        <h3 class="mt-4 text-xl font-bold">Transportation</h3>
+        <p class="mt-2 text-gray-600">We offer transportation services to make your travel hassle-free.</p>
+      </div>
+      <div class="text-center">
+        <i class="fas fa-passport text-4xl text-blue-500"></i>
+        <h3 class="mt-4 text-xl font-bold">Visa Assistance</h3>
+        <p class="mt-2 text-gray-600">We assist with visa applications to ensure a smooth travel experience.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Testimonials Section -->
+  <section class="bg-gray-200 py-12 container">
+    <div>
+      <h2 class="text-3xl font-bold text-center mb-8 marg">
+        What Our Customers Say
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-4  text-center">
+            <img alt="Customer" class="w-16 h-16 rounded-full object-cover" src="https://storage.googleapis.com/a1aa/image/2SZBcf6fIop1vEfd46vacnTbdfcfq27uckYbOtasu1HeDua9E.jpg"/>
+            <h3 class="mt-4 text-xl font-bold">Sarah Johnson</h3>
+            <p class="mt-2 text-gray-600">
+              "The trip to Paris was unforgettable. Thanks to Tourism Co. for making it so special!"
+            </p>
+            <p>⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+          <div class="p-4 text-center">
+            <img alt="Customer" class="w-16 h-16 rounded-full object-cover" src="https://storage.googleapis.com/a1aa/image/Qr6ktwA6DXbKF1DYMUfLT1DxSA4a9Js0vKWqdrG6LrSXeq1TA.jpg"/>
+            <h3 class="mt-4 text-xl font-bold">James Lee</h3>
+            <p class="mt-2 text-gray-600">
+              "I had the best vacation ever in the Maldives. Everything was perfectly organized."
+            </p>
+            <p>⭐⭐⭐⭐⭐</p>
+          </div>
+        </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-4 text-center">
+              <img alt="Customer" class="w-16 h-16 rounded-full object-cover" src="https://storage.googleapis.com/a1aa/image/jzti6omAzKqWN1GB6ntNH2gbePpdXNwQA0A8MmaEqFpWeq1TA.jpg"/>
+              <h3 class="mt-4 text-xl font-bold">James Lee</h3>
+              <p class="mt-2 text-gray-600">
+                "I had the best vacation ever in the Maldives. Everything was perfectly organized."
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+        <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-4 text-center">
+              <img alt="Customer" class="w-16 h-16 rounded-full object-cover" src="https://storage.googleapis.com/a1aa/image/oKjH4E4YlmaNE19IwR7jngDMDYuWknnmaQL6tcSz1yeVeq1TA.jpg"/>
+              <h3 class="mt-4 text-xl font-bold">James Lee</h3>
+              <p class="mt-2 text-gray-600">
+                "I had the best vacation ever in the Maldives. Everything was perfectly organized."
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-4 text-center">
+              <img alt="Customer" class="w-16 h-16 rounded-full object-cover" src="https://storage.googleapis.com/a1aa/image/irTCategKeuJE0krdD6Sf57rMM7jdpQklzE4ZbDgCuRNnrtnA.jpg"/>
+              <h3 class="mt-4 text-xl font-bold">David Wilson</h3>
+              <p class="mt-2 text-gray-600">
+                "The cruise to the Caribbean was fantastic. The food and entertainment were top-notch."
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+          <div class="bg-white shadow-md rounded-lg overflow-hidden">
+            <div class="p-4 text-center">
+              <img alt="Customer" class="w-16 h-16 rounded-full object-cover" src="https://storage.googleapis.com/a1aa/image/tmPgeefV6HP1AIN48VXzj3l6J0aUweYtkO1AfILfm0bD6ct9E.jpg"/>
+              <h3 class="mt-4 text-xl font-bold">Emily Davis</h3>
+              <p class="mt-2 text-gray-600">
+                "The safari in Kenya was an unforgettable experience. We saw so many animals up close."
+              </p>
+              <p>⭐⭐⭐⭐⭐</p>
+            </div>
+          </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Intelligent Destination Explorer -->
+  <section class="search-section" id="Destination">
+    <div class="container3">
+      <h2 class="section-title">Find Your Perfect Destination</h2>
+      <div class="form-container">
+        <form>
+          <div class="form-grid">
+            <div class="form-group">
+              <label for="budget" class="form-label">Budget</label>
+              <select id="budget" name="budget" class="form-select">
+                <option>$500 - $1000</option>
+                <option>$1000 - $2000</option>
+                <option>$2000 - $3000</option>
+                <option>$3000+</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="budget" class="form-label">country</label>
+              <select id="budget" name="budget" class="form-select">
+                <option>Country</option>
+                    <option>United States</option>
+                    <option>Canada</option>
+                    <option>United Kingdom</option>
+                    <option>France</option>
+                    <option>Germany</option>
+                    <option>Italy</option>
+                    <option>Spain</option>
+                    <option>Japan</option>
+                    <option>China</option>
+                    <option>United Arab Emirates</option>
+                    <option>Saudi Arabia</option>
+                    <option>Egypt</option>
+                    <option>Turkey</option>
+                    <option>Brazil</option>
+                    <option>Australia</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="duration" class="form-label">Trip Duration</label>
+              <select id="duration" name="duration" class="form-select">
+                <option>3-5 days</option>
+                <option>5-7 days</option>
+                <option>7-10 days</option>
+                <option>10+ days</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="goals" class="form-label">Travel Goals</label>
+              <select id="goals" name="goals" class="form-select">
+                <option>Relaxation</option>
+                <option>Adventure</option>
+                <option>History</option>
+                <option>Culture</option>
+              </select>
+            </div>
+          </div>
+          <div class="form-button-container">
+            <button class="form-button">Find Destination</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+  <!-- footer -->
+  <footer class="footer" id="footers">
+    <div class="container4">
+        <div class="footer-content">
+            <div class="footer-section">
+              <h3>We strive to provide the best travel experiences that combine  adventure, relaxation and culture. Discover the world through our  carefully designed trips to suit all tastes.</h3>
+            </div>
+            <div class="footer-section">
+                <h2 class="footer-heading">Contact Information</h2>
+                <p>Phone: <a href="#" class="hover-effect">+10 658 171 32</a></p>
+                <p>Email: <a href="#" class="hover-effect">khaledyasser@gmail.com</a></p>
+                <p>Address: 123 News Street, Media City, Country</p>
+            </div>
+            <div class="footer-section">
+              <h2 class="footer-heading">Follow Us</h2>
+              <div class="social-links">
+                  <a href="https://facebook.com" target="_blank" class="hover-effect"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://twitter.com" target="_blank" class="hover-effect"><i class="fab fa-twitter"></i></a>
+                  <a href="https://instagram.com" target="_blank" class="hover-effect"><i class="fab fa-instagram"></i></a>
+                  <a href="https://linkedin.com" target="_blank" class="hover-effect"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+  <script src="./js/index.js"></script>
+</body>
+</html>
+

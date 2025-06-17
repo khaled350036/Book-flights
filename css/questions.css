@@ -1,0 +1,285 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&family=DM+Serif+Text:ital@0;1&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: linear-gradient(90deg, #98f8ff, #398bff);
+    background-size: 200% 200%;
+    height: 108vh;
+    animation: gradientAnimation 5.5s ease infinite;
+    font-family: "DM Serif Text", serif;
+}
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+header{
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+header>div>a {
+    margin: 0 2rem;
+    color: #292c2f;
+    font-size: 1.4rem;
+}
+.logo{
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+img{
+    margin-top: 5px;
+    width: 50px;
+    height: 50px;
+}
+main{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+}
+.card{
+    padding: 20px;
+    text-align: center;
+    background: linear-gradient(to bottom, #fca1e2, #4cdeff);
+    display: none;
+    border-radius: 10px;
+    animation: fadeAnimation 1s ease;
+
+}
+
+@keyframes fadeAnimation {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+.card>div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+.card>h1{
+    font-size: 2rem;
+    padding-bottom: 10px;
+    color: #2d2d2f;
+}
+.card>div>button{
+    border: none;
+    width: 23rem;
+    height: 5.5rem;
+    margin-top: 20px;
+    font-size: 1.3rem;
+    font-weight: 500;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.103);
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+    border-radius: 10px;
+    background-color: rgb(206, 232, 255);
+}
+.card>div>button:hover{
+    transform: scale(1.06);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.312);
+}
+.card1{
+    display: block;
+}
+section{
+    height: 8%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    
+}
+section>button{
+    border: none;
+    width: 2rem;
+    height: 0.5rem;
+    margin-right: 20px;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.103);
+    transition: transform 0.3s ease, box-shadow 0.3s ease-in-out;
+    border-radius: 25px;
+    background-color: rgb(206, 232, 255);
+}
+.color{
+    background:#89f7fe;
+}
+
+@media (max-width: 450px){
+    .card{
+        width: 95%;
+    }
+    .card>h1{
+        font-size: 1.5rem;
+    }
+    .card>div>button{
+        width: 17rem;
+        
+    }
+}
+@media (min-height: 1000px)and (min-width: 700px){
+    .card{
+        height: 77%;
+        width: 70%;
+    }
+    .br-card{
+        display: none;
+    }
+    .card>div{
+        justify-content:space-around;
+        height: 80%;
+    }
+    .card>div>button{
+        font-size: 1.7rem;
+        width: 85%;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+/*   
+@keyframes gradientAnimation {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    opacity: 0;
+    transform: translateY(-70px);
+    animation: fadeIn 1s forwards;
+}
+@keyframes fadeIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+}
+header{
+    width: 100%;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    z-index: 2;
+}
+header>div>a {
+    margin: 0 2rem;
+    color: #292c2f;
+    font-size: 1.4rem;
+}
+main > div{
+    background: linear-gradient(to bottom, #ff93e1, #920de6);
+    text-align: center;
+    width: 90%;
+    padding-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content:center;
+    flex-direction: column;
+    opacity: 1;
+    transition: opacity 0.5s ease, visibility 0.5s ease;
+    visibility: visible;
+    position: fixed;
+}
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+main > div > h1{
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+main > div > div{
+    padding:1.5rem 1.5rem;
+}
+main > div >div > button{
+    margin-top: 2rem;
+    padding: 20px 0;
+    width: 97%; ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+main > div > div >button:hover{
+    transform: scale(1.08);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+main > div > div >button:active {
+    transform: scale(0.99);
+}
+section>button{
+    margin: 0 10px;
+    width: 2rem;
+    height: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    background: #292c2f;
+}
+.color{
+    background:#89f7fe;
+}
+
+@media  (min-width: 800px){
+    main > div{
+        width: 40%;
+    }
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

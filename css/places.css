@@ -1,0 +1,320 @@
+html {
+    scroll-behavior: smooth; 
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+header {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position:sticky;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    
+}
+
+.container_nav {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* تنسيق الشعار */
+.language-buttons{
+    display: flex;
+    gap: 30px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 50px;
+    width: 50px;
+}
+
+.logo span {
+    margin-left: 10px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* تنسيق الروابط */
+nav {
+    display: flex;
+    gap: 16px;
+}
+
+nav a {
+    color: #4a4a4a;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+.language-buttons button ,a {
+    background: none;
+    border: none;
+    color: #4a4a4a;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+.language-buttons button:hover ,a:hover {
+    color: #3498db;
+}
+#nav_links_out{
+    display: none ;
+    flex-direction: column;
+    position: absolute;
+    top: 100%;
+    right: 2%;
+    border-radius: 0 0 20px 20px;
+    background-color: #f8f9fa;
+    padding: 1rem;
+    z-index: 1000;
+}
+.hero>img{
+    width: 100%;
+    height: 75vh;
+    object-fit: cover;
+}
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.hero-text h1 {
+    font-size: 50px;
+    margin: 0;
+}
+.hero-text p {
+    font-size: 20px;
+}
+.hero-text .cta {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;
+}
+.offers {
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.h1-title {
+    text-align:center;
+}
+.container{
+    padding: 50px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.offer-card  {
+    background-color: white;
+    width: 300px;
+    margin: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+.offer-card:hover{
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.offer-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+.offer-card .details {
+    padding: 20px;
+}
+.offer-card .details h3 {
+    margin: 0;
+    font-size: 24px;
+}
+.offer-card .details p {
+    margin: 10px 0;
+}
+.offer-card .details .discount {
+    color: #ff6f61;
+    font-weight: bold;
+}
+.offer-card .details .price {
+    text-decoration: line-through;
+    color: grey;
+}
+.offer-card .details .new-price {
+    color: #ff6f61;
+    font-weight: bold;
+}
+.offer-card .details .book-now {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 10px;
+}
+.why-choose-us {
+    background-color: #3498db;
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+.why-choose-us h2 {
+    margin: 0;
+    font-size: 36px;
+}
+.why-choose-us p {
+    font-size: 18px;
+    margin: 20px 0;
+}
+.footer {
+    background-color: #2d3748;
+    color: #fff;
+    padding: 5rem 0;
+    }
+    
+    .container4{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    }
+    
+    .footer-content {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .footer-section {
+    text-align: center;
+    max-width: 23rem;
+    }
+    
+    .footer-heading {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    }
+    
+    .footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    }
+    
+    .footer-links li {
+    margin-bottom: 0.5rem;
+    }
+    
+    .hover-effect {
+    color: inherit;
+    text-decoration: none;
+    }
+    
+    .hover-effect:hover {
+    text-decoration: underline;
+    }
+    
+    .social-links {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    }
+    
+    .social-links a {
+    color: inherit;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+    }
+    
+    .social-links a:hover {
+    color: #3182ce;
+    }
+
+
+
+@media (max-width: 830px) {
+
+    a{
+        font-size: 1.5rem;
+    }
+    .hero-text p{
+        font-size: 2rem;
+    }
+    .hero-text .cta{
+        font-size: 2rem;
+    }
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+    .offer-card{
+        width: 400px;
+    }
+    .offer-card .details h3{
+        font-size: 2rem;
+    }
+    .offer-card .details p{
+        font-size: 1.5rem;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 830px) and (max-width: 1024px) {
+    a{
+        font-size: 1.5rem;
+    }
+    .hero-text p{
+        font-size: 2rem;
+    }
+    .hero-text .cta{
+        font-size: 2rem;
+    }
+    .hero-text h1 {
+        font-size: 4rem;
+    }
+    .offer-card{
+        width: 400px;
+    }
+    .offer-card .details h3{
+        font-size: 2rem;
+    }
+    .offer-card .details p{
+        font-size: 1.5rem;
+    }
+    .footer-content{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+
+
+
